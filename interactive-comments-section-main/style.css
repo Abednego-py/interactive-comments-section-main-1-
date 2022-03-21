@@ -1,0 +1,272 @@
+body {
+    background-color: hsl(228, 33%, 97%);
+    font-family: 'Rubik', sans-serif;
+}
+.chat-wrapper {
+    width: 70%;
+    height: 90vh;
+    margin: 20px auto;
+}
+.chat-card {
+    width: 90%;
+    height: 150px;
+    margin: 5px auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    box-shadow: 5px 5px hsl(228, 33%, 97%);
+    display: flex;
+    margin-bottom: 15px;
+}
+.fir {
+    flex-basis: 4%;
+    flex-direction: column;
+    margin: 10px auto;
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 60%;
+    background-color: hsl(228, 33%, 97%);
+    border-radius: 10px;
+}
+.fir > img {
+    position: relative;
+    left: 12px;
+    top: 6px;
+    cursor: pointer;
+}
+
+.chat-main {
+    flex-basis: 90%;
+    flex-direction: column;
+    display: flex;
+}
+.top {
+flex-basis: 30%;
+display: flex;
+flex-direction: row;
+margin-left: -10px;
+}
+.top .avatar {
+    flex-basis: 5%;
+    height: 35px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+.top .user {
+flex-basis: 15%;
+margin-top: 25px;
+font-weight: 700;
+line-height: 25px;
+}
+.top .date {
+flex-basis: 15%;
+margin-top: 27px;
+color: hsl(211, 10%, 45%);
+}
+.top .space {
+flex-basis: 50%;
+}
+.top .reply-img {
+    flex-basis: 2%;
+    height: 15px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.top #reply{
+flex-basis: 5%;
+margin-left: 5px;
+margin-top: 22px;
+color: hsl(238, 40%, 52%);
+cursor: pointer;
+}
+.content {
+    flex-basis: 70%;
+    width: 90%;
+    line-height: 25px;
+    margin-top: -12px;
+    color: hsl(211, 10%, 45%);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.vote-count {
+    width: 60%;
+    margin-top: 15px;
+    margin-left: 12px;
+    height: 8%;
+    font-weight: 700;
+    color: hsl(238, 40%, 52%);
+}
+
+.reply-content {
+    display: flex;
+    width: 95%;
+    height: 90%;
+}
+.reply-content #send-avatar {
+    flex-basis: 5%;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.reply-content #reply-avatar {
+    flex-basis: 5%;
+    height: 25px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.reply-content textarea {
+    flex-basis: 80%;
+    height: 80%;
+    margin: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid hsl(239, 57%, 85%);
+}
+.reply-content button {
+    width: 10%;
+    height: 40px;
+    margin-top: 20px;
+    color: #fff;
+    background-color: hsl(238, 40%, 52%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+button:hover{
+    background-color: hsl(239, 57%, 85%);
+}
+
+#reply-cont {
+    display: none;
+    width: 82%;
+}
+
+.chat-card-wrapper3 {
+    margin-left: 13%;
+    width: 82%;
+}
+
+.top .avatar4 {
+    flex-basis: 5%;
+    height: 35px;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+.top .user4 {
+    flex-basis: 15%;
+margin-top: 25px;
+font-weight: 700;
+line-height: 25px;
+}
+.top .date4 {
+    flex-basis: 15%;
+    margin-top: 27px;
+    color: hsl(211, 10%, 45%);
+}
+.top .space4 {
+    flex-basis: 30%;
+}
+.top .edit-img{
+    flex-basis: 2%;
+    height: 15px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.top #edit {
+flex-basis: 15%;
+color: hsl(238, 40%, 52%);
+position: relative;
+left: 10px;
+top: 7px;
+cursor: pointer;
+}
+.top #delete {
+flex-basis: 15%;
+color: hsl(358, 79%, 66%);
+position: relative;
+left: 10px;
+top: 7px;
+cursor: pointer;
+}
+.top .delete-img {
+    flex-basis: 2%;
+    height: 15px;
+    margin-top: 25px;
+    cursor: pointer;}
+
+.top span {
+    flex-basis: 3%;
+    height: 25px;
+    color: #fff;
+    background-color: hsl(238, 40%, 52%);
+    font-weight: 500;
+    position: relative;
+    left: -10px;
+    top: 22px;
+    padding: 2px 5px;
+}
+
+/**Delete Notification */
+.chat-card-delete {
+    padding: 300px auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: hsl(0, 0%, 100%);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.notification {
+    background-color: #fefefe;
+    margin: auto;
+    height: 180px;
+    border: 1px solid #888;
+    width: 25%;
+    padding: 20px;
+    border-radius: 7px;
+    margin: 5px auto;
+    margin-left: 20px;
+    position: relative;
+    top: 280px;
+    left: 400px;
+}
+.notification h3 {
+    margin: 15px;
+    font-weight: 500;
+    color:  hsl(211, 10%, 45%);
+}
+.notification p {
+    margin: 15px;
+    line-height: 25px;
+    color:  hsl(211, 10%, 45%);
+
+}
+.notification button {
+    margin: 15px;
+    border-radius: 4px;
+    height: 34px;
+    margin-top: -2px;
+    color: #fff;
+    border: none;
+    width: 100px;
+    cursor: pointer;
+}
+#cancel-button {
+    background-color: hsl(211, 10%, 45%);
+}
+#delete-button {
+    background-color: hsl(358, 79%, 66%);
+}
+/* #body {
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+} */
